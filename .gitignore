@@ -1,0 +1,12 @@
+/.cache/
+/.work/
+/out/
+/vendor/
+__pycache__/
+*.py[cod]
+*.log
+*.deb
+*.buildinfo
+*.changes
+*.tar.*
+.env

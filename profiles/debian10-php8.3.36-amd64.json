@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "debian10-php8.3.36-amd64",
+  "status": "experimental",
+  "php": {
+    "version": "8.3.36",
+    "module_api": "20230831",
+    "package_version": "8.3.36-1~deb10.local1"
+  },
+  "target": {
+    "family": "debian",
+    "suite": "buster",
+    "architecture": "amd64",
+    "platform": "linux/amd64",
+    "image": "debian:buster",
+    "apt_sources": [
+      "deb [check-valid-until=no] http://archive.debian.org/debian buster main",
+      "deb [check-valid-until=no] http://archive.debian.org/debian-security buster/updates main"
+    ]
+  },
+  "source": {
+    "dsc": "php8.3_8.3.36-1+0~20261021.88+debian11~1.gbp250f7c.dsc",
+    "files": [
+      {
+        "filename": "php8.3_8.3.36-1+0~20261021.88+debian11~1.gbp250f7c.dsc",
+        "url": "https://packages.sury.org/php/pool/main/p/php8.3/php8.3_8.3.36-1%2B0~20261021.88%2Bdebian11~1.gbp250f7c.dsc",
+        "sha256": "d4dc00fcd7ea410cf293b246aa3eb8f4999172ccda8d030fe842e02760be5816"
+      },
+      {
+        "filename": "php8.3_8.3.36-1+0~20261021.88+debian11~1.gbp250f7c.debian.tar.xz",
+        "url": "https://packages.sury.org/php/pool/main/p/php8.3/php8.3_8.3.36-1%2B0~20261021.88%2Bdebian11~1.gbp250f7c.debian.tar.xz",
+        "sha256": "844ed1cd76a265181dec2cc9f473287b93d3b4a35f172a4bbbe1b7c290b60a89"
+      },
+      {
+        "filename": "php8.3_8.3.36.orig.tar.xz",
+        "url": "https://packages.sury.org/php/pool/main/p/php8.3/php8.3_8.3.36.orig.tar.xz",
+        "sha256": "dd54693aa334c5c4d72e9aee96b082c2473750a18a6c1d105789c93a3b1692fd"
+      }
+    ]
+  },
+  "verification": {
+    "extensions": ["mysqlnd", "pdo", "mysqli", "pdo_mysql", "bcmath", "bz2", "curl", "gd", "intl", "mbstring", "xml", "dom", "simplexml", "xmlreader", "xmlwriter", "xsl", "readline"],
+    "zend_extensions": ["opcache"],
+    "test_paths": ["tests/basic", "tests/lang", "tests/output"]
+  }
+}
