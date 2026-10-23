@@ -18,4 +18,18 @@ jobs:
       - name: Test build orchestration
         run: python3 -m unittest discover -s tests -v
       - name: Validate profiles and shell syntax
-        run: ./bin/php-build check
+        run: |
+          ./bin/php-build check
+          ./bin/php-runtime check
+
+  php56-runtime:
+    needs: checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Build and exercise PHP 5.6-FPM runtime
+        run: ./bin/php-runtime build debian13-php5.6.40-fpm-amd64

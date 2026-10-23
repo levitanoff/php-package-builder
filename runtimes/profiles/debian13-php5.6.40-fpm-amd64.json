@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "kind": "runtime",
+  "id": "debian13-php5.6.40-fpm-amd64",
+  "status": "experimental",
+  "php": {
+    "version": "5.6.40",
+    "module_api": "20131226",
+    "package_version": "5.6.40-105+0~20261022.135+debian13~1.gbp37a17e"
+  },
+  "target": {
+    "family": "debian",
+    "suite": "trixie",
+    "architecture": "amd64",
+    "platform": "linux/amd64",
+    "image": "debian:trixie-slim"
+  },
+  "repository": "https://packages.sury.org/php/",
+  "keyring": {
+    "filename": "debsuryorg-archive-keyring.deb",
+    "url": "https://packages.sury.org/debsuryorg-archive-keyring.deb",
+    "sha256": "7511384559c9ddf1d5ce5f60be429ae9d4e7d01d9480d6f1b7a30c0810cf8b60"
+  },
+  "packages": [
+    {
+      "name": "php5.6-common",
+      "filename": "php5.6-common_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-common_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "452f1020e83c19d32d54405b24856f04cb8f5933c99cade1421a6187cd936208"
+    },
+    {
+      "name": "php5.6-json",
+      "filename": "php5.6-json_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-json_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "081db1e4599f6052659fb2319107307e01e4c2deb0adc070bdd94d7eb21442bb"
+    },
+    {
+      "name": "php5.6-opcache",
+      "filename": "php5.6-opcache_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-opcache_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "a465f53c5013da56030c9723d00fce1f628bb1f0dd8f051b7f9adbf840da8360"
+    },
+    {
+      "name": "php5.6-readline",
+      "filename": "php5.6-readline_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-readline_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "cf9bc5c414bf8c1643b8ff665be601f27bc5440c2de1bb2b49fc3078c30fad01"
+    },
+    {
+      "name": "php5.6-cli",
+      "filename": "php5.6-cli_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-cli_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "edc54ad5b5e47ec77af5d966b7d239130d97d8dec7b188aa6acf559de9d3ed80"
+    },
+    {
+      "name": "php5.6-fpm",
+      "filename": "php5.6-fpm_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-fpm_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "2989d5f704b50d8b47a4f328f323be2e83c3a6476bb5afbe00f1da28382d3076"
+    },
+    {
+      "name": "php5.6-mysql",
+      "filename": "php5.6-mysql_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-mysql_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "21fa85b6439afc1bd42280d3344c8c98bb30ecbabb5eb9aecf92ad394fcfe990"
+    },
+    {
+      "name": "php5.6-mbstring",
+      "filename": "php5.6-mbstring_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-mbstring_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "c1bb014ec540fb038a26edbd30c092ad30da3d16cc9d3ba56a2adcebc24ffc0e"
+    },
+    {
+      "name": "php5.6-gd",
+      "filename": "php5.6-gd_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-gd_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "9aad59422c28d733aacd2f9fed0671150e088db8fa6dbeb3769343caa6435124"
+    },
+    {
+      "name": "php5.6-xml",
+      "filename": "php5.6-xml_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "url": "https://packages.sury.org/php/pool/main/p/php5.6/php5.6-xml_5.6.40-105+0~20261022.135+debian13~1.gbp37a17e_amd64.deb",
+      "sha256": "1979a83c01fac8732eb695fa46393b467c4eda827f17decda475524f0b311ed4"
+    }
+  ],
+  "verification": {
+    "extensions": [
+      "mysql",
+      "mysqli",
+      "pdo_mysql",
+      "mysqlnd",
+      "mbstring",
+      "iconv",
+      "gd",
+      "dom",
+      "simplexml",
+      "xmlreader",
+      "xmlwriter",
+      "xsl",
+      "json",
+      "session"
+    ],
+    "functions": [
+      "mysql_connect",
+      "mysql_query",
+      "mysql_set_charset",
+      "mb_strtolower",
+      "iconv",
+      "imagettftext",
+      "imagecreatefromjpeg",
+      "imagecreatefrompng"
+    ],
+    "gd_features": [
+      "FreeType Support",
+      "JPEG Support",
+      "PNG Support"
+    ],
+    "oom_exit_code": 1
+  },
+  "security": {
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "patch": "0261-Avoid-state-corruption-via-bailout.patch",
+    "patch_scope": "Minimal mitigation for EOL version; OOM terminates the process; session upload progress is disabled."
+  }
+}
