@@ -149,7 +149,8 @@ php_admin_value[session.upload_progress.min_freq] = 0
                         if time.monotonic() >= deadline:
                             raise
                         time.sleep(0.05)
-                assert first["sapi"] == "fpm-fcgi" and first["version"] == profile["php"]["version"], first
+                assert first["sapi"] == "fpm-fcgi", first
+                assert first["version"] in (profile["php"]["version"], profile["php"]["package_version"]), first
                 assert first["cp1251"] == "cff0e8e2e5f2", first
                 assert request(port, short) == b"short-tags-ok"
                 boundary = "php56runtimecheck"

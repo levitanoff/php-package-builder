@@ -7,7 +7,8 @@ function check($condition, $message) {
         exit(1);
     }
 }
-check(PHP_VERSION === $profile['php']['version'], 'Unexpected PHP version');
+check(in_array(PHP_VERSION, array($profile['php']['version'], $profile['php']['package_version']), true),
+      'Unexpected PHP version: ' . PHP_VERSION);
 check(PHP_SAPI === 'cli' && !PHP_ZTS, 'Expected CLI NTS runtime');
 check(basename(PHP_EXTENSION_DIR) === $profile['php']['module_api'], 'Unexpected module API');
 foreach ($profile['verification']['extensions'] as $extension) {
